@@ -15,3 +15,7 @@ You'll need the following toolchains for everything to work:
 * TinyGo - this one is needed because wasm only supports a subset of what Go can do, which tinygo also accounted for. I'm using tinygo version 0.31.2 darwin/arm64 (using go version go1.21.0 and LLVM version 17.0.1)
 * Rust, cargo, and the rustup toolchain - I'm using rustup 1.27.0 (bbb9276d2 2024-03-08)
 * Rust wasm32-wasi target. Install this with `rustup target add wasm32-wasi`
+
+## Legal bit
+
+All of the code is open source, and it's been adapted from either the wazero examples, or using echo itself.
