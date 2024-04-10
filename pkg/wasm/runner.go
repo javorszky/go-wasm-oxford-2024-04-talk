@@ -14,6 +14,7 @@ type Mod int
 const (
 	Add Mod = iota
 	Date
+	NoDate
 	Hash
 	Greet
 )
@@ -51,6 +52,8 @@ func (r *Runner) Exec(ctx context.Context, what Mod) ([]byte, error) {
 		return r.execAdd(ctx)
 	case Date:
 		return r.execDate(ctx)
+	case NoDate:
+		return r.execNoDate(ctx)
 	case Hash:
 		return r.execHash(ctx)
 	case Greet:

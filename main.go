@@ -23,6 +23,8 @@ func main() {
 	e.GET("/", handlers.Home())
 	e.GET("/add/:x/:y", handlers.Add(r))
 	e.GET("/date", handlers.Date(r))
+	e.GET("/nodate", handlers.NoDate(r))
+
 	e.GET("/hash/:what", handlers.Hash(r))
 	e.GET("/greet/:who", handlers.Greet(r))
 

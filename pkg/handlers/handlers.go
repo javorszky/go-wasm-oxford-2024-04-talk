@@ -55,6 +55,19 @@ func Date(r *wasm.Runner) echo.HandlerFunc {
 	}
 }
 
+func NoDate(r *wasm.Runner) echo.HandlerFunc {
+	return func(c echo.Context) error {
+		wasmCtx := context.Background()
+
+		result, err := r.Exec(wasmCtx, wasm.NoDate)
+		if err != nil {
+			return errors.Wrap(err, "error while executing wasm module")
+		}
+
+		return c.String(http.StatusOK, string(result))
+	}
+}
+
 func Hash(r *wasm.Runner) echo.HandlerFunc {
 	return func(c echo.Context) error {
 		wasmCtx := context.WithValue(context.Background(), wasm.ContextKey, c.Param("what"))
