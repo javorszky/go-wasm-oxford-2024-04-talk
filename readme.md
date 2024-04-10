@@ -19,3 +19,10 @@ You'll need the following toolchains for everything to work:
 ## Legal bit
 
 All of the code is open source, and it's been adapted from either the wazero examples, or using echo itself.
+
+## Resources
+
+* https://webassembly.org/docs/security/
+* https://wasi.dev/
+* https://tinygo.org/docs/guides/webassembly/
+* https://rustwasm.github.io/book/
