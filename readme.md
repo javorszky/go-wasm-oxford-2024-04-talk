@@ -26,3 +26,5 @@ All of the code is open source, and it's been adapted from either the wazero exa
 * https://wasi.dev/
 * https://tinygo.org/docs/guides/webassembly/
 * https://rustwasm.github.io/book/
+* https://github.com/tetratelabs/wazero
+* https://wasmtime.dev/
